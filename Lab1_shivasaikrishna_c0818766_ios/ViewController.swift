@@ -65,13 +65,13 @@ class ViewController: UIViewController
     @IBAction func tap(_ sender: UIButton)
     {
         addtoBoard(sender)
-        if checkForVictory(cross)
+        if checkForWin(cross)
         {
             xPoints += 1
             resultNote(title: "Crosses Win!")
         }
         
-        if checkForVictory(nought)
+        if checkForWin(nought)
         {
             oPoints += 1
             resultNote(title: "Noughts Win!")
@@ -83,7 +83,7 @@ class ViewController: UIViewController
         
     }
     
-    func checkForVictory(_ s :String) -> Bool
+    func checkForWin(_ s :String) -> Bool
     {
         // Horizontal Victory
         if thisSymbol(r1c1, s) && thisSymbol(r1c2, s) && thisSymbol(r1c3, s)

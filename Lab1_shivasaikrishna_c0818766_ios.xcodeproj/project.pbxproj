@@ -13,6 +13,7 @@
 		913A50E727962B3200A84E84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913A50E527962B3200A84E84 /* Main.storyboard */; };
 		913A50E927962B3300A84E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913A50E827962B3300A84E84 /* Assets.xcassets */; };
 		913A50EC27962B3300A84E84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913A50EA27962B3300A84E84 /* LaunchScreen.storyboard */; };
+		91866A64279F83000086ABC8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91866A62279F83000086ABC8 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		913A50E827962B3300A84E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		913A50EB27962B3300A84E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		913A50ED27962B3300A84E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91866A63279F83000086ABC8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				913A50E827962B3300A84E84 /* Assets.xcassets */,
 				913A50EA27962B3300A84E84 /* LaunchScreen.storyboard */,
 				913A50ED27962B3300A84E84 /* Info.plist */,
+				91866A62279F83000086ABC8 /* Model.xcdatamodeld */,
 			);
 			path = Lab1_shivasaikrishna_c0818766_ios;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				913A50E427962B3200A84E84 /* ViewController.swift in Sources */,
 				913A50E027962B3200A84E84 /* AppDelegate.swift in Sources */,
 				913A50E227962B3200A84E84 /* SceneDelegate.swift in Sources */,
+				91866A64279F83000086ABC8 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +362,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		91866A62279F83000086ABC8 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				91866A63279F83000086ABC8 /* Model.xcdatamodel */,
+			);
+			currentVersion = 91866A63279F83000086ABC8 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 913A50D427962B3100A84E84 /* Project object */;
 }

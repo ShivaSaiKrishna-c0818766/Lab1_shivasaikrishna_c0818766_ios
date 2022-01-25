@@ -44,7 +44,37 @@ class ViewController: UIViewController
     {
 
         super.viewDidLoad()
+        self.becomeFirstResponder()
         initialBoard()
+    }
+    override var canBecomeFirstResponder: Bool {
+        get {
+            return true
+        }
+    }
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+        
+            for btn in gameBoard
+            {
+            
+                btn.setTitle("", for: .normal)
+                btn.isEnabled = true
+                }
+                
+            
+            if firstChance == Turn.Nought
+            {
+                firstChance = Turn.Cross
+                turnL.text = cross
+            }
+            else if firstChance == Turn.Cross
+            {
+                firstChance = Turn.Nought
+                turnL.text = nought
+            }
+            currentChance = firstChance
+    }
     }
         func initialBoard()
         {
